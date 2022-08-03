@@ -1,0 +1,40 @@
+.greeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    &__text {
+        font-size: 35px;
+        color: white;
+        font-weight: 400;
+        text-align: right;
+    }
+
+    &__name {
+        width: 189px;
+        display: block;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 35px;
+        color: white;
+        font-weight: 400;
+
+        &::placeholder {
+            color: white;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .greeting {
+        &__text {
+            font-size: 30px;
+        }
+
+        &__name {
+            font-size: 30px;
+        }
+    }
+}

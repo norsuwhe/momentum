@@ -1,0 +1,54 @@
+@import './components/time/time';
+@import './components/greeting/greeting';
+@import './components/quote/quote';
+@import './components/backgroundSlider/backgroundSlider';
+@import './components/weather/weather';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 99%;
+    height: 100%;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.top-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+
+    .center-container {
+        gap: 5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
