@@ -1,8 +1,8 @@
-@import './components/time/time';
-@import './components/greeting/greeting';
-@import './components/quote/quote';
-@import './components/backgroundSlider/backgroundSlider';
-@import './components/weather/weather';
+@import 'components/time/time.scss';
+@import 'components/greeting/greeting.scss';
+@import 'components/quote/quote.scss';
+@import 'components/backgroundSlider/backgroundSlider.scss';
+@import 'components/weather/weather.scss';
 
 * {
     margin: 0;

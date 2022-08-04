@@ -1,4 +1,4 @@
-class Weather {
+export class Weather {
     constructor() {
         this.input = document.querySelector('.weather__input')
         this.weather = {}
@@ -52,5 +52,3 @@ class Weather {
         this.input.addEventListener('change', this.changeCity);
     }
 }
-
-const weather = new Weather();

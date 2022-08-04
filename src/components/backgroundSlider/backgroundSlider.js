@@ -1,4 +1,4 @@
-class BackgroundSlider {
+export class BackgroundSlider {
     constructor() {
         this.background = document.querySelector('.background-slider');
         this.nextButton = document.querySelector('.background-slider__next-button')
@@ -42,5 +42,3 @@ class BackgroundSlider {
 
     }
 }
-
-const backgroundSlider = new BackgroundSlider();
