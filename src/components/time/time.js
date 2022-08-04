@@ -1,4 +1,4 @@
-class Time {
+export class Time {
     constructor() {
         this.clock = document.querySelector('.time__clock')
         this.date = document.querySelector('.time__date')
@@ -23,5 +23,3 @@ class Time {
         this.date.textContent = this.currentDate
     }
 }
-
-const time = new Time();

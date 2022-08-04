@@ -1,4 +1,4 @@
-class Quote {
+export class Quote {
     constructor() {
         this.refreshButton = document.querySelector('.quote__refresh')
         this.quoteText = document.querySelector('.quote__text')
@@ -33,5 +33,3 @@ class Quote {
         })
     }
 }
-
-const quote = new Quote();

@@ -1,4 +1,4 @@
-class Weather {
+export class Weather {
     constructor() {
         this.input = document.querySelector('.weather__input')
         this.weather = {}
@@ -22,9 +22,8 @@ class Weather {
             this.city = localStorage.getItem('city')
             this.getWeather();
         } else {
-            this.input.value = 'Minsk';
-            this.city = 'Minsk'
-            this.getWeather()
+            this.input.value = '';
+            this.city = ''
         }
     }
 
@@ -44,13 +43,11 @@ class Weather {
         this.input.value = this.city
         this.weatherC.textContent = `${Math.trunc(this.weather.main.temp)}°C`;
         this.weatherDescription.textContent = this.weather.weather[0].description;
-        this.weaterWind.textContent = `Wind speed: ${Math.trunc(this.weather.wind.speed)}`;
-        this.weatherHumidity.textContent = `Humidity: ${this.weather.main.humidity}`;
+        this.weaterWind.textContent = `Wind speed: ${Math.trunc(this.weather.wind.speed)}m/s`;
+        this.weatherHumidity.textContent = `Humidity: ${this.weather.main.humidity}%`;
     }
 
     setEvents = () => {
         this.input.addEventListener('change', this.changeCity);
     }
 }
-
-const weather = new Weather();

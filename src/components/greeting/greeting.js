@@ -1,4 +1,4 @@
-class Greeting {
+export class Greeting {
     constructor() {
         this.time = new Date().toLocaleString('en-US', { hour12: false, hour: 'numeric', minute: 'numeric' }).split(':').join('');
         this.greetingText = document.querySelector('.greeting__text')
@@ -47,5 +47,3 @@ class Greeting {
         window.addEventListener('load', this.getLocalStorage)
     }
 }
-
-const greeting = new Greeting();
